@@ -1,0 +1,170 @@
+* {
+    font-family: 'Hind Madurai', sans-serif !important;
+}
+
+#full-screen-title {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#full-screen-name a {
+    font-weight: 100;
+    color: #5D5D5D;
+    display: inline-block;
+}
+
+#full-screen-name a:hover {
+    text-decoration: none;
+    color: #3D3D3D;
+}
+
+#custom-navbar {
+    padding-top: 20px;
+    background-color: white;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+#navbar-header {
+    padding: 0;
+    padding-top: 15px;
+    margin-left: 15px;
+    font-size: 30px;
+}
+
+#navbar-links {
+    float: right;
+    padding-right: 20px;
+}
+#navbar-links li a {
+    padding-top: 15px;
+}
+
+
+#bio {
+    font-size: 1em;
+    color: #5D5D5D;
+    border-bottom: 1px groove grey;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#side-nav {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+#side-nav a {
+    padding-bottom: 10px;
+    font-size: 1em;
+    display: inline-block;
+}
+
+#construction-notice {
+    color: #55595c;
+}
+
+.about-me {
+    line-height: 23px;
+    margin: 25px 0;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+#side-nav {
+
+}
+
+#personal-data {
+    margin-top: 24px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#personal-data .row {
+    margin-bottom: 10px;
+}
+
+#personal-data a {
+    color: #5D5D5D;
+}
+
+footer {
+    background-color: #55595c;
+    height: 35px;
+    text-align: center;
+    padding-top: 10px;
+    color: #A4A4A4;
+    margin-bottom: -15px;
+}
+
+#main {
+    margin-bottom: 60px;
+}
+
+#profile-picture {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+@media screen and (min-width: 768px) {
+    #navbar-links {
+        display: none;
+    }
+
+    #navbar-header {
+        margin: 20px 40px;
+        font-size: 2em;
+    }
+
+    #bio {
+        font-size: 1.5em;
+        letter-spacing: 0.06em;
+    }
+
+    #custom-navbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #full-screen-title {
+        display: none;
+    }
+
+    #side-nav {
+        display: none;
+    }
+
+    #bio {
+        font-size: 1.5em;
+        display: block;
+    }
+
+    #body {
+        margin-top: inherit;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 729px) {
+    .footer-CTA {
+        display: none;
+    }
+}
+
+.content-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#body {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
