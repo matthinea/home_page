@@ -67,9 +67,9 @@
 }
 
 .about-me {
-    line-height: 23px;
+    line-height: 26px;
     margin: 25px 0;
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-align: justify;
 }
 
@@ -110,7 +110,7 @@ footer {
 }
 
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     #navbar-links {
         display: none;
     }
@@ -130,7 +130,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     #full-screen-title {
         display: none;
     }
@@ -139,8 +139,23 @@ footer {
         display: none;
     }
 
+    #navbar-header {
+        font-size: 40px;
+    }
+
+    .about-me {
+        font-size: 1.6em;
+        line-height: 1.1em;
+        text-align: left;
+        letter-spacing: 1px;
+    }
+
+    #footer-extras {
+        display: none;
+    }
+
     #bio {
-        font-size: 1.5em;
+        font-size: 2em;
         display: block;
     }
 
@@ -153,7 +168,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 729px) {
+@media (max-width: 729px) {
     .footer-CTA {
         display: none;
     }
@@ -167,4 +182,10 @@ footer {
 #body {
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+    #personal-data {
+        font-size: 1em;
+    }
 }
