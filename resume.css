@@ -52,9 +52,12 @@ a#pdf:hover { background: #222; }
 .skills-list ul { margin: 0; }
 .skills-list li { margin: 3px 0; padding: 3px 0; }
 .skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
-.talent { width: 32%; float: left }
+.talent { width: 50%; float: left }
 .talent h2 { margin-bottom: 6px; }
-
+.technical { width: 32%; float: left }
+.technical h2 { margin-bottom: 6px; }
+.technical li span { font-style: italic; }
+.ital { font-style: italic; }
 #srt-ttab { margin-bottom: 100px; text-align: center;  }
 #srt-ttab img.last { margin-top: 20px }
 
@@ -62,11 +65,13 @@ a#pdf:hover { background: #222; }
 .yui-gf .yui-u{width:80.2%;}
 .yui-gf div.first{width:12.3%;}
 
-#uw {
+.uw {
     margin-bottom: 10px;
 }
 
-#ed-div {
+.margin-top { margin-top: 10px; }
+
+.ed-div {
     margin-bottom: 0.3em;
     padding-bottom: 0.1em;
 }
