@@ -89,3 +89,6 @@ a#pdf:hover { background: #222; }
     margin-right: -70px;
 }
 
+.right-indent {
+    margin-right: 33px;
+}
