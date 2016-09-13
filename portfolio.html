@@ -60,12 +60,20 @@
 
 <main class="container" id="main">
    <div class="row">
-      <div class="col-sm-8">
-         <h3><a href="http://candy.matthinea.info/" target="_blank">Baby's first HTML/CSS static site.</a></h3>
-         <h3><a href="http://garden.matthinea.info/" target="_blank">Second-ever site.</a></h3>
-         <h3 id="construction-notice">More coming soon . . .</h3>
+      <div class="col-sm-9" id="portfolio-div">
+         <h3 id="first-portfolio-item">App.ly</h3> <h4> <a href="https://floating-retreat-44813.herokuapp.com/" target="_blank">Site</a> | <a href="https://github.com/mnd-dsgn/college_scorecard">Repo</a> </h4>
+         <p class="about-me border-bottom padding-bottom">App.ly is a Rails app for prospective college students and their families. Search 500 colleges and universities, browse useful school data, bookmark schools you're interested in, review schools, and track your applications. I added school reviews, configured the Google oauth sign-in, and added automatic email confirmation to the app.</p>
+
+         <h3>Seattle Crime Data Portal</h3><h4><a href="https://gentle-mountain-95184.herokuapp.com/" target="_blank">Site</a> | <a href="https://github.com/mnd-dsgn/seattle_crime_stats">Repo</a> </h4>
+         <p class="about-me border-bottom padding-bottom"> Built to simplify interaction with Seattle's OpenData API. Crime statistics for searched-for time periods and areas are displayed to the screen with other relevant data. Form validations use the database to check whether beats belong to precincts, otherwise the data comes from real-time hits to the API.</p>
+
+         <h3>Spotify.sample</h3><h4><a href="https://spotify-sampler.herokuapp.com/" target="_blank">Site</a> | <a href="https://github.com/mnd-dsgn/spotify_sampler">Repo</a>  </h4>
+         <p class="about-me border-bottom padding-bottom"> I built this as a spin-off of a hackathon project. It reads a random word from a database of 60,000 words, searches Spotify for the word, and returns a random result. Listening history is displayed on the screen. </p>
+
+         <h3>JavaScript Snake</h3><h4><a href="snake.html" target="_blank">Site</a> | <a href="https://github.com/mnd-dsgn/project_game_center_browser.git">Repo</a>  </h4>
+         <p class="about-me padding-bottom"> More games coming soon. </p>
       </div>
-      <div class="col-sm-3 col-md-offset-1 col-sm-offset-0">
+      <div class="col-sm-1 col-md-offset-0 col-sm-offset-0">
          <ul id="side-nav">
             <li><a href="#">Portfolio</a></li>
             <li><a href="cv.html">CV</a></li>
@@ -78,23 +86,10 @@
 <footer class="footer navbar-fixed-bottom">
    <div class="container">
       <div class="footer-content">
-         <p>&copy; 2016. Site by yours truly, with the help of Twitter Bootstrap and Sass. <span class="footer-CTA">(Go ahead and resize it. You know you want to.)</span></p>
+         <p>&copy; 2016. Site by yours truly.</p>
       </div>
    </div>
 </footer>
-
-
-<!-- how do i have a nav menu that's hidden for larger screens but still viewable in the dropdown on smaller screens?
- easy: media-queries that set the menu to hidden at the same size that it would appear fully (not as a drop-down)
- then, have a right-floated section with the links on larger screens that disappears at the same moment that the nav button appears
-
-768px
- code the nav bar as per usual
- wrap it in a div
- use css to hide the menu at larger screen widths via media queries
-
-
- -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

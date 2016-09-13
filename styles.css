@@ -2,6 +2,14 @@
     font-family: 'Hind Madurai', sans-serif;
 }
 
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+.padding-bottom {
+    padding-bottom: 10px;
+}
+
 #full-screen-title {
     margin-top: 15px;
     margin-bottom: 30px;
@@ -75,6 +83,10 @@
 
 #side-nav {
 
+}
+
+#first-portfolio-item {
+    margin-top: -20px;
 }
 
 #personal-data {
@@ -188,4 +200,13 @@ footer {
     #personal-data {
         font-size: 1em;
     }
+}
+
+#portfolio-div a, #portfolio-div h4 {
+    display: inline-block;
+}
+
+#portfolio-div h3 {
+    display: inline-block;
+    margin-right: 20px;
 }
