@@ -2,6 +2,7 @@
   margin: 0 auto;
   padding: 0;
   line-height: 0;
+  text-align: center;
 }
 
 #game-grid {
@@ -38,7 +39,6 @@
 
 
 #game-title {
-  margin-left: 15%;
   margin-top: 80px;
   font-family: Helvetica, sans-serif;
 }

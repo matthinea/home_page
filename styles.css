@@ -210,3 +210,7 @@ footer {
     display: inline-block;
     margin-right: 20px;
 }
+
+.margin-right {
+    margin-right: 40px;
+}
