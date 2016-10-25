@@ -10,6 +10,14 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="2c25d1de-264f-4303-afa4-3ba1dc255732" name="Development" url="http://matthinea.info">
+        <fileTransfer host="matthinea.info" port="21" rootFolder="/development" password="dfc5dfc7dfcddfdddfdedfccdf93df93df8b" username="mathin24">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

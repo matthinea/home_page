@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://dashboard.heroku.com/apps/shielded-citadel-77890/logs -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="dns-prefetch" href="https://www.herokucdn.com/">
+  <link rel="dns-prefetch" href="https://d1ic07fwm32hlr.cloudfront.net/">
+  <link rel="dns-prefetch" href="https://d37gvrvc0wt4s1.cloudfront.net/">
+  <link rel="dns-prefetch" href="https://api.heroku.com/">
+  <link rel="dns-prefetch" href="https://longboard.heroku.com/">
+  <link rel="dns-prefetch" href="https://telex.heroku.com/">
+  <!--<base href="/">--><base href=".">
+<meta name="dashboard/config/environment" content="%7B%22modulePrefix%22%3A%22dashboard%22%2C%22environment%22%3A%22production%22%2C%22baseURL%22%3A%22%2F%22%2C%22locationType%22%3A%22auto%22%2C%22braintreeKey%22%3A%22MIIBCgKCAQEA3i9Xvu0yRynWGzZWzj3u6M%2FALehapRFyPwvqgf1iyX9mpKADfYqI7pon902O124QxMEPCnaqOn6vr95uigS4C9nFlEsk5lxgZid51uMepIHtzwHzv%2F531wmWSvcMBbfIK%2BGK3edaZ4rFqrqhCEZGoXBGLDZ5in1rV8XEfhQ0tboy%2Bt6z1%2BvfLweqH6UjS4cSwvlw%2FCLnf9qtYTGe889%2Fq5VdZAH9VpzJriUUfo%2BcGOD2On4qNb87CRgRblmY0w9FhVaZVUA7Th7WQsvOrmgQfqFwocv83KTiIa62G0EMXyvq89L9SU8%2BAZBtLSP637fQv4uK6ZjzmPYu93IC2F2S2wIDAQAB%22%2C%22useReporter%22%3Atrue%2C%22acdxApiHost%22%3A%22salesforce-addon-staging.herokuapp.com%22%2C%22acdxAppHost%22%3A%22https%3A%2F%2Facdx-hub-staging.herokuapp.com%22%2C%22apiHost%22%3A%22api.heroku.com%22%2C%22appHost%22%3A%22https%3A%2F%2Fdashboard.heroku.com%22%2C%22clockInterval%22%3A1000%2C%22herokuAppName%22%3A%22dashboard%22%2C%22herokuOauthHost%22%3A%22id.heroku.com%22%2C%22herokuOauthProto%22%3A%22https%3A%2F%2F%22%2C%22longboardProto%22%3A%22https%3A%2F%2F%22%2C%22longboardHost%22%3A%22longboard.heroku.com%22%2C%22longboardUrl%22%3A%22https%3A%2F%2Flongboard.heroku.com%22%2C%22dashboardHost%22%3A%22dashboard.heroku.com%22%2C%22orgResourcesProto%22%3A%22https%3A%2F%2F%22%2C%22orgResourcesHost%22%3A%22organization-resources-api.hit.heroku.com%22%2C%22kolkrabbiHost%22%3A%22https%3A%2F%2Fkolkrabbi.heroku.com%22%2C%22telexHost%22%3A%22telex.heroku.com%22%2C%22dropiHost%22%3A%22dropi.herokuapp.com%22%2C%22profaHost%22%3A%22https%3A%2F%2Fprofa.herokuapp.com%22%2C%22admitNonHerokai%22%3A%22true%22%2C%22metricsFeedbackEmail%22%3A%22metrics-feedback%40heroku.com%22%2C%22metricsApiHost%22%3A%22api.metrics.herokai.com%22%2C%22metricsApiProto%22%3A%22https%3A%2F%2F%22%2C%22metricsPreventNewApiUsage%22%3Afalse%2C%22eventSocketHost%22%3A%22https%3A%2F%2Fsimi.heroku.com%22%2C%22ssoHost%22%3A%22sso.heroku.com%22%2C%22maintenancePageURL%22%3A%22https%3A%2F%2Fheroku-dashboard-next-error-pages.s3-eu-west-1.amazonaws.com%2Fmaintenance.html%22%2C%22heroku-identity%22%3A%7B%22logoutUrl%22%3A%22https%3A%2F%2Fid.heroku.com%2Flogout%22%7D%2C%22ember-simple-auth%22%3A%7B%22routeAfterAuthentication%22%3A%22protected%22%2C%22routeIfAlreadyAuthenticated%22%3A%22protected%22%2C%22localStorageKey%22%3A%22ember_simple_auth%3Asession%22%2C%22authorizer%22%3A%22authorizer%3Aheroku-bearer%22%7D%2C%22torii%22%3A%7B%22providers%22%3A%7B%22github-oauth2%22%3A%7B%22apiKey%22%3A%222bde25e3844dcbccc16d%22%2C%22redirectUri%22%3A%22https%3A%2F%2Fdashboard.heroku.com%2Flogin%2Foauth%22%2C%22scope%22%3A%22repo%22%7D%2C%22dropbox-oauth2%22%3A%7B%22apiKey%22%3A%22fd3vsd91sks1rmd%22%2C%22redirectUri%22%3A%22https%3A%2F%2Fdashboard.heroku.com%2Flogin%2Foauth%22%7D%7D%7D%2C%22githubClientId%22%3A%222bde25e3844dcbccc16d%22%2C%22socketReconnectionCount%22%3A10%2C%22socketReconnectionDelay%22%3A500%2C%22googleTagManagerApiKey%22%3A%22GTM-JD26%22%2C%22rollbar%22%3A%7B%22accessToken%22%3A%228f165e8862cd4dfd9dd6a159021a3c86%22%2C%22captureUncaught%22%3Atrue%2C%22payload%22%3A%7B%22environment%22%3A%22production%22%2C%22client%22%3A%7B%22javascript%22%3A%7B%22source_map_enabled%22%3Atrue%2C%22code_version%22%3A%22code_version%22%7D%7D%7D%7D%2C%22metricsAdapters%22%3A%5B%7B%22name%22%3A%22Mixpanel%22%2C%22environments%22%3A%5B%22production%22%5D%2C%22config%22%3A%7B%22token%22%3A%22325542fa1983eb0dde2b60e0c08ca388%22%7D%7D%5D%2C%22moment%22%3A%7B%22includeTimezone%22%3A%222010-2020%22%7D%2C%22exportApplicationGlobal%22%3A%22Dashboard%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%2C%22Array%22%3Atrue%2C%22Function%22%3Atrue%2C%22String%22%3Atrue%7D%7D%2C%22APP%22%3A%7B%7D%7D">
+  <script type="text/javascript" async="" src="./fa_files/pencilvester"></script><script type="text/javascript" async="" src="./fa_files/linkid.js"></script><script type="text/javascript" async="" src="./fa_files/analytics.js"></script><script async="" src="./fa_files/gtm.js"></script><script>window.ENV = JSON.parse(decodeURIComponent(document.querySelector('[name="dashboard/config/environment"]').content));</script>
+  
+    <script>
+    var _rollbarConfig = ENV.rollbar;
+    if (_rollbarConfig.accessToken) {
+    // Rollbar Snippet
+    !function(r){function o(e){if(t[e])return t[e].exports;var n=t[e]={exports:{},id:e,loaded:!1};return r[e].call(n.exports,n,n.exports,o),n.loaded=!0,n.exports}var t={};return o.m=r,o.c=t,o.p="",o(0)}([function(r,o,t){"use strict";var e=t(1).Rollbar,n=t(2);_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://d37gvrvc0wt4s1.cloudfront.net/js/v1.9.0/rollbar.min.js";var a=e.init(window,_rollbarConfig),i=n(a,_rollbarConfig);a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,i)},function(r,o){"use strict";function t(r){return function(){try{return r.apply(this,arguments)}catch(o){try{console.error("[Rollbar]: Internal error",o)}catch(t){}}}}function e(r,o,t){window._rollbarWrappedError&&(t[4]||(t[4]=window._rollbarWrappedError),t[5]||(t[5]=window._rollbarWrappedError._rollbarContext),window._rollbarWrappedError=null),r.uncaughtError.apply(r,t),o&&o.apply(window,t)}function n(r){var o=function(){var o=Array.prototype.slice.call(arguments,0);e(r,r._rollbarOldOnError,o)};return o.belongsToShim=!0,o}function a(r){this.shimId=++s,this.notifier=null,this.parentShim=r,this._rollbarOldOnError=null}function i(r){var o=a;return t(function(){if(this.notifier)return this.notifier[r].apply(this.notifier,arguments);var t=this,e="scope"===r;e&&(t=new o(this));var n=Array.prototype.slice.call(arguments,0),a={shim:t,method:r,args:n,ts:new Date};return window._rollbarShimQueue.push(a),e?t:void 0})}function l(r,o){if(o.hasOwnProperty&&o.hasOwnProperty("addEventListener")){var t=o.addEventListener;o.addEventListener=function(o,e,n){t.call(this,o,r.wrap(e),n)};var e=o.removeEventListener;o.removeEventListener=function(r,o,t){e.call(this,r,o&&o._wrapped?o._wrapped:o,t)}}}var s=0;a.init=function(r,o){var e=o.globalAlias||"Rollbar";if("object"==typeof r[e])return r[e];r._rollbarShimQueue=[],r._rollbarWrappedError=null,o=o||{};var i=new a;return t(function(){if(i.configure(o),o.captureUncaught){i._rollbarOldOnError=r.onerror,r.onerror=n(i);var t,a,s="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(t=0;t<s.length;++t)a=s[t],r[a]&&r[a].prototype&&l(i,r[a].prototype)}return r[e]=i,i})()},a.prototype.loadFull=function(r,o,e,n,a){var i=function(){var o;if(void 0===r._rollbarPayloadQueue){var t,e,n,i;for(o=new Error("rollbar.js did not load");t=r._rollbarShimQueue.shift();)for(n=t.args,i=0;i<n.length;++i)if(e=n[i],"function"==typeof e){e(o);break}}"function"==typeof a&&a(o)},l=!1,s=o.createElement("script"),u=o.getElementsByTagName("script")[0],p=u.parentNode;s.crossOrigin="",s.src=n.rollbarJsUrl,s.async=!e,s.onload=s.onreadystatechange=t(function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){s.onload=s.onreadystatechange=null;try{p.removeChild(s)}catch(r){}l=!0,i()}}),p.insertBefore(s,u)},a.prototype.wrap=function(r,o){try{var t;if(t="function"==typeof o?o:function(){return o||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._wrapped){r._wrapped=function(){try{return r.apply(this,arguments)}catch(o){throw o._rollbarContext=t()||{},o._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=o,o}},r._wrapped._isWrap=!0;for(var e in r)r.hasOwnProperty(e)&&(r._wrapped[e]=r[e])}return r._wrapped}catch(n){return r}};for(var u="log,debug,info,warn,warning,error,critical,global,configure,scope,uncaughtError".split(","),p=0;p<u.length;++p)a.prototype[u[p]]=i(u[p]);r.exports={Rollbar:a,_rollbarWindowOnError:e}},function(r,o){"use strict";r.exports=function(r,o){return function(t){if(!t&&!window._rollbarInitialized){var e=window.RollbarNotifier,n=o||{},a=n.globalAlias||"Rollbar",i=window.Rollbar.init(n,r);i._processShimQueue(window._rollbarShimQueue||[]),window[a]=i,window._rollbarInitialized=!0,e.processPayloads()}}}}]);
+    // End Rollbar Snippet
+    }
+    </script>
+    
+
+  <title>shielded-citadel-77890 · Logs | Heroku</title>
+
+
+  <link rel="stylesheet" href="./fa_files/vendor-f431e9b2bfc0cc796f6df7fbbbd99241.css">
+  <link rel="stylesheet" href="./fa_files/dashboard-3d603468cc85a8875cc830842508cb11.css">
+
+  <meta http-equiv="Cache-control" content="private, no-store, no-cache, must-revalidate, proxy-revalidate">
+  <meta http-equiv="Expires" content="Sat, 05 Nov 1955 00:00:00 PST">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Heroku">
+  <meta name="referrer" content="origin">
+
+  <link href="https://dashboard.heroku.com/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://dashboard.heroku.com/images/static/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://dashboard.heroku.com/images/static/apple-touch-icon-152x152.png">
+  <link rel="mask-icon" href="https://dashboard.heroku.com/images/static/icon.svg" color="#79589F">
+
+  
+<style type="text/css">
+    .glostick {
+      box-sizing: border-box;
+      background: white;
+      font-family: sans-serif;
+      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      padding: 0 15px;
+      height: 50px;
+      -webkit-user-select: none;
+      font-family: benton-sans, 'Helvetica Neue', sans-serif;
+      box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
+    }
+
+    .glostick::after {
+      background: linear-gradient(to right, #9E7CC1, #8ECDEA);
+      content:'';
+      width:100%;
+      position: absolute;
+      top: 50px;
+      height: 3px;
+      left: 0;
+    }
+
+    .glostick.glostick--sfdc {
+      box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .glostick.glostick--sfdc::after {
+      background: none;
+      height: 0px;
+      display: none;
+    }
+
+    .glostick a {
+      cursor: pointer;
+    }
+
+    .glostick__modal-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.2);
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: .4s cubic-bezier(.3, 0, 0, 1.3);
+    }
+
+    .glostick__modal-bg--active {
+      opacity: 0;
+      pointer-events: auto;
+    }
+
+    .glostick__link--search {
+      cursor: pointer;
+    }
+
+    .glostick__icon--search {
+      background: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>search</title><path d="M13.61 15.292a8.5 8.5 0 1 1 1.682-1.682L20 18.319 18.318 20l-4.707-4.708h-.001zM8.5 15a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13z" fill="%238DCAE9" fill-rule="evenodd"/></svg>');
+      background-size: 22px 22px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 32px;
+      height: 50px;
+    }
+
+    .glostick__property {
+      flex: 1;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+    }
+
+    .glostick__property__name {
+      display: inline-block;
+      height: 50px;
+      text-decoration: none;
+      color: #9E7CC1!important;
+      padding-left: 0px;
+      font-size: 18px;
+    }
+
+    .glostick--sfdc .glostick__property__name {
+      font-size: inherit;
+    }
+
+    .glostick.glostick--sfdc .glostick__property__name span {
+      display: none;
+    }
+
+    .glostick__property__name:hover {
+      color: #9E7CC1!important;
+    }
+
+    .glostick__property__name:active {
+      color: #9E7CC1!important;
+    }
+
+    .glostick__property__name:focus {
+      color: #9E7CC1!important;
+    }
+
+    .glostick__property__name span {
+      position: absolute;
+      left: 52px;
+      top: 1px;
+      line-height: 48px;
+    }
+
+    .glostick__property .icon-logo {
+      background: url('data:image/svg+xml;utf8,<svg width="27" height="30" viewBox="0 0 27 30" xmlns="http://www.w3.org/2000/svg"><title>heroku-logo</title><path d="M3 0C1.13 0 0 1.11 0 2.903v24.194C0 28.883 1.13 30 3 30h21c1.863 0 3-1.11 3-2.903V2.903C26.994 1.11 25.863 0 24 0H3zm21.042 2c.508.006.958.448.958.929V27.07c0 .487-.45.929-.958.929H2.958C2.45 28 2 27.558 2 27.071V2.93c0-.488.45-.93.958-.93h21.084zM20 25h-2.781v-8.506c0-.774-.237-1.048-.468-1.208-1.396-.959-5.414-.042-7.834.916L7 17.012 7.006 5h2.816v7.917a20.99 20.99 0 0 1 1.882-.482c2.988-.643 5.184-.47 6.616.505.787.536 1.68 1.59 1.68 3.554V25zm-6-15h3.293A16.109 16.109 0 0 0 20 5h-3.287c-.49 1.188-1.385 3.188-2.713 5zM7 25v-7l3 3.5L7 25z" fill="%239E7CC1" fill-rule="evenodd"/></svg>');
+      background-size: 27px 30px;
+      width: 27px;
+      height: 30px;
+      display: inline-block;
+      position: relative;
+      opacity: 1;
+      top: 10px;
+      margin-right: 7px;
+    }
+
+    .glostick__property .heroku-wordmark {
+      background: url('data:image/svg+xml;utf8,<svg width="62" height="10" viewBox="0 0 62 10" xmlns="http://www.w3.org/2000/svg"><title>HEROKU</title><path d="M0 9.802h2.6V5.915h3.198v3.887h2.6V.182h-2.6v3.575H2.6V.182H0v9.62zm11.374 0h7.085V7.709h-4.485V5.928h3.042V3.9h-3.042V2.34h4.264V.182h-6.864v9.62zm9.567 0h2.548V6.461h.715l1.859 3.341h2.756l-2.041-3.679c1.26-.429 1.898-1.3 1.898-2.808 0-2.314-1.508-3.133-3.978-3.133H20.94v9.62zm2.548-5.317V2.288h1.118c1.066 0 1.534.286 1.534 1.092s-.468 1.105-1.534 1.105h-1.118zm12.257 5.499c2.314 0 4.72-1.469 4.72-4.992C40.465 1.469 38.06 0 35.745 0c-2.327 0-4.732 1.469-4.732 4.992 0 3.523 2.405 4.992 4.732 4.992zm0-2.08c-1.365 0-2.132-1.144-2.132-2.912s.767-2.847 2.132-2.847c1.352 0 2.12 1.079 2.12 2.847s-.768 2.912-2.12 2.912zm7.24 1.898h2.6v-2.99l.741-.858 2.275 3.848h2.938l-3.523-5.824L51.254.182h-3.016l-2.652 3.484V.182h-2.6v9.62zm14.624.143c2.808 0 4.03-1.456 4.03-4.004V.182h-2.548v5.746c0 1.326-.416 1.924-1.456 1.924s-1.469-.598-1.469-1.924V.182h-2.6v5.759c0 2.548 1.235 4.004 4.043 4.004z" fill="%238460AA" fill-rule="evenodd"/></svg>');
+      width: 62px;
+      height: 10px;
+      display: inline-block;
+      top: 19px;
+      background-repeat: no-repeat;
+    }
+
+    .glostick.glostick--sfdc .glostick__property .icon-logo {
+      background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 103 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M14.565 2.618A6.198 6.198 0 0 1 19.003.75a6.223 6.223 0 0 1 5.4 3.136 7.596 7.596 0 0 1 3.052-.636C31.622 3.251 35 6.59 35 10.708s-3.378 7.457-7.545 7.457c-.499 0-.997-.048-1.487-.145a5.539 5.539 0 0 1-4.814 2.768 5.58 5.58 0 0 1-2.413-.545C17.783 22.452 15.551 24 12.948 24c-2.71 0-5.02-1.68-5.906-4.035a5.92 5.92 0 0 1-1.2.122C2.616 20.087 0 17.498 0 14.304a5.776 5.776 0 0 1 2.921-5.008 6.498 6.498 0 0 1-.56-2.645C2.362 2.978 5.407 0 9.16 0a6.846 6.846 0 0 1 5.405 2.618" fill="%2302a0df"/><path d="M43.128 5.388h1.316v4.028h.03c.27-.388.632-.704 1.053-.918.444-.233.99-.35 1.64-.35.992 0 1.724.276 2.199.828.475.552.712 1.24.712 2.066v4.909h-1.315v-4.655c0-.607-.155-1.106-.464-1.5-.31-.393-.81-.588-1.503-.588-.712 0-1.282.225-1.71.678-.428.453-.642 1.022-.642 1.708v4.357h-1.316V5.388zm16.129 7.221h-5.852c.052.776.294 1.392.728 1.85.433.458 1.052.686 1.857.686.475 0 .901-.062 1.277-.186a4.918 4.918 0 0 0 1.138-.56l.588.82c-.434.304-.912.54-1.417.702-.538.165-1.1.245-1.663.239-1.207 0-2.149-.368-2.825-1.104-.675-.737-1.013-1.716-1.013-2.94 0-.785.144-1.477.433-2.073a3.24 3.24 0 0 1 1.261-1.395c.553-.334 1.216-.5 1.989-.5 1.146 0 2.02.358 2.624 1.074.604.716.905 1.666.905 2.85 0 .239-.01.418-.03.537zm-1.255-.985c-.02-.756-.22-1.362-.603-1.82-.381-.458-.934-.687-1.656-.687-.733 0-1.3.236-1.703.71-.402.472-.619 1.071-.65 1.798h4.612v-.001zm3.375-1.566c0-.557-.036-1.125-.108-1.701h1.253c.052.338.088.74.108 1.209h.032c.454-.945 1.279-1.418 2.476-1.418.083 0 .232.015.45.045l-.079 1.088a2.734 2.734 0 0 0-.48-.03c-.753 0-1.33.245-1.733.732-.402.487-.604 1.119-.604 1.894v4.074h-1.315v-5.893zm12.986 2.074c0 .785-.157 1.484-.472 2.096a3.389 3.389 0 0 1-1.362 1.425c-.594.338-1.303.507-2.128.507-.816 0-1.522-.172-2.122-.515a3.39 3.39 0 0 1-1.36-1.425c-.31-.607-.465-1.303-.465-2.088 0-1.214.346-2.181 1.037-2.903.691-.72 1.661-1.081 2.91-1.081.836 0 1.55.166 2.143.5a3.332 3.332 0 0 1 1.355 1.395c.31.596.464 1.293.464 2.088zm-6.547 0c0 .905.214 1.633.642 2.185.429.552 1.076.828 1.943.828.877 0 1.533-.276 1.965-.828.433-.552.65-1.28.65-2.185 0-.906-.217-1.627-.65-2.164-.433-.537-1.088-.806-1.965-.806s-1.527.269-1.95.806c-.423.537-.635 1.258-.635 2.163zm10.741.179l-.758.686v2.954h-1.316V5.388H77.8v6.176l3.576-3.206h1.579l-3.483 3.132 3.823 4.46h-1.641l-3.096-3.64zm5.991.7V8.358h1.33v4.476c0 .696.158 1.255.473 1.678.315.422.802.634 1.463.634.722 0 1.3-.26 1.733-.783.433-.522.65-1.171.65-1.948V8.358h1.316v5.907c0 .547.036 1.11.108 1.687h-1.254c-.05-.319-.087-.721-.107-1.21h-.032c-.567.945-1.475 1.418-2.724 1.418-.98 0-1.718-.29-2.213-.872-.496-.583-.743-1.34-.743-2.275v-.001z" fill="%237b7b7b"/></svg>');
+      width: 103px;
+      height: 24px;
+      background-repeat: no-repeat;
+      top: 13px;
+    }
+
+    .glostick__user .icon-navigator-toggle {
+      background: url('data:image/svg+xml;utf8,<svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><title>Combined Shape Copy 2</title><path d="M2 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM9 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm7-14a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="%238DCAE9" fill-rule="evenodd"/></svg>');
+      background-size: 18px 18px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 32px;
+      height: 50px;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .glostick__user {
+      display: flex;
+      margin-left: 5px;
+    }
+
+    .glostick__user__avatar--container {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .glostick__user__avatar--container::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('https://www.herokucdn.com/images/ninja-avatar-96x96.png');
+      background-size: cover;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .glostick__menu__item--account-details .glostick__user__avatar--container {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 10px;
+      box-shadow: none;
+    }
+
+    .glostick__user__avatar, .glostick__account-details__avatar {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      z-index: 2;
+    }
+
+    .glostick__account-details__avatar {
+      width: 48px;
+      height: 48px;
+      box-shadow: none;
+    }
+
+    .glostick__menu {
+      width: 240px;
+      box-shadow: 0 3px 20px rgba(89, 105, 129, .3), 0 1px 2px rgba(0, 0, 0, .05), 0 0 0 1px rgba(89, 105, 129, .1);
+      position: absolute;
+      background-color: #fff;
+      opacity: 0;
+      pointer-events: none;
+      border-radius: 3px;
+      background-clip: content-box;
+      z-index: 9991;
+      transform: translateY(-4px);
+      transition: transform ease 0.1s, opacity ease 0.1s;
+    }
+
+    .glostick__menu--open {
+      transform: translateY(0px);
+    }
+
+    .glostick__menu-icon {
+      display: inline-block;
+    }
+
+    .glostick__menu-icon--account {
+      position: relative;
+      display: inline-block;
+      width: 32px;
+      height: 40px;
+      padding-top: 10px;
+      margin-left: 12px;
+    }
+
+    .glostick__user__notification {
+      opacity: 0;
+      position: absolute;
+      top: 8px;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+      transition: opacity ease .3s;
+      z-index: 3;
+    }
+
+    .glostick__user__notification.visible {
+      opacity: 1;
+    }
+
+    .glostick__user__notification::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 6px;
+      height: 6px;
+      transform: scale(1.2);
+      border-radius: 50%;
+      background-image: linear-gradient(-180deg, #8FE8FE 0%, #00B7FF 100%);
+    }
+
+    .glostick__menu--navigator {
+      position: absolute;
+      right: 56px;
+      top: 56px;
+    }
+
+    .glostick__menu--account {
+      position: absolute;
+      right: 8px;
+      top: 56px;
+    }
+
+    .glostick__menu__item {
+      position: relative;
+      display: block;
+      height: 40px;
+      border-bottom: 1px solid #EEF1F6;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 40px;
+      color: #79589F;
+      padding: 0 46px;
+      background-size: 21px 23px;
+      background-repeat: no-repeat;
+      background-position: 15px 48%;
+    }
+
+    .glostick__menu__item:first-child {
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+    }
+
+    .glostick__menu__item:last-child {
+      border-bottom: 0;
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+
+    .glostick__menu__item:hover {
+      text-decoration: none;
+      background-color: #F7F8FB;
+      color: #61467f;
+    }
+
+    .glostick__menu__item--notifications__indicator {
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      width: 8px;
+      height: 8px;
+      margin-top: -5px;
+      border-radius: 50%;
+      background-image: linear-gradient(-180deg, #8FE8FE 0%, #00B7FF 100%);
+    }
+
+    .glostick__menu__item--account-details {
+      height: auto;
+      display: block;
+      line-height: normal;
+      text-align: center;
+      color: #3F3F44;
+      padding: 20px 10px 20px;
+    }
+
+    .glostick__account-details__name {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .glostick__account-details__email {
+      font-size: 13px;
+      display: block;
+      color: #96A3B6;
+      width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .glostick__menu__item--assume-identity {
+      background-image: url('data:image/svg+xml;utf8,<svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg"><title>assume-identity</title><defs><linearGradient x1="0%" y1="0%" y2="100%" id="a"><stop stop-color="%23AC8ECE" offset="0%"/><stop stop-color="%2379589F" offset="100%"/></linearGradient></defs><path d="M11 4.098C9.95 3.534 8.788 3 7.5 3 6.202 3 5.055 3.526 4 4.098L0 0v11.78c0 4.2 2 7.683 4.5 9.22-1.5-2.049-2-5-2-5h10s-.5 2.951-2 5c2.5-1.537 4.458-5.004 4.5-9.22V0l-4 4.098zm-5.11 8.095c-.351.13-1.139.556-1.504.659-.366.104-.872.168-1.07 0a30.23 30.23 0 0 1-.955-.853c-.127-.13-.212-1.165.534-1.113.759.053 2.812.828 2.939.867.127.038.408.31.056.44zm6.72-.194c-.126.129-.76.685-.956.853-.198.168-.703.104-1.069 0-.366-.103-1.153-.53-1.505-.66-.352-.129-.07-.4.056-.44.127-.038 2.18-.813 2.94-.866.745-.052.66.983.534 1.113z" transform="translate(3 1)" fill="url(%23a)" fill-rule="evenodd"/></svg>');
+    }
+
+    .glostick__menu__item--dashboard {
+      background-image: url('data:image/svg+xml;utf8,<svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg"><title>dashboard</title><defs><linearGradient x1="0%" y1="0%" y2="100%" id="a"><stop stop-color="%23AC8ECE" offset="0%"/><stop stop-color="%2379589F" offset="100%"/></linearGradient></defs><path d="M0 7v7c0 1.108.662 2.371 1.492 2.861 0 0 6.489 3.568 6.952 3.973.223.118.912.189 1.056.189.144 0 .833-.071 1.056-.19.463-.404 6.94-3.965 6.94-3.965C18.338 16.37 19 15.107 19 14V7c0-1.108-.662-2.372-1.492-2.861L10.496.132S9.644 0 9.5 0c-.144 0-.832.048-1.055.166-.464.404-6.941 3.966-6.941 3.966C.662 4.627 0 5.89 0 7zm9.146-5.016h.708c-.02-.001 6.65 3.884 6.65 3.884.183.108.496.706.496 1.132v7c0 .425-.314 1.024-.51 1.14 0 0-6.57 3.895-6.49 3.876.094-.02-.384.007-.504.007H9c.02.002-6.504-3.891-6.504-3.891C2.313 15.024 2 14.426 2 14V7c0-.427.313-1.024.507-1.138 0 0 6.658-3.88 6.639-3.878z" transform="translate(1 1)" fill="url(%23a)" fill-rule="evenodd"/></svg>');
+    }
+
+    .glostick__menu__item--databases {
+      background-image: url('data:image/svg+xml;utf8,<svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg"><title>databases</title><defs><linearGradient x1="0%" y1="0%" y2="100%" id="a"><stop stop-color="%23AC8ECE" offset="0%"/><stop stop-color="%2379589F" offset="100%"/></linearGradient></defs><path d="M17 8.776v2.205a1.86 1.86 0 0 1-.104.064l-6.009 3.464a2.778 2.778 0 0 1-2.774 0l-6.009-3.464A1.865 1.865 0 0 1 2 10.981V8.776l5.51 3.176c1.23.71 2.75.71 3.98 0L17 8.776zm0-1.394v-.398c0-.426-.313-1.023-.496-1.131L9.496 1.984 2.507 5.846C2.313 5.961 2 6.558 2 6.984v.398c.034.022.068.043.104.063l6.009 3.464a2.778 2.778 0 0 0 2.774 0l6.01-3.464c.035-.02.07-.042.103-.063zM0 9.492V6.983C0 5.874.662 4.61 1.504 4.115c0 0 7.164-4.084 7.253-4.105.117-.025.599 0 .743 0 .144 0 .626-.025.743 0 .09.021 7.265 4.112 7.265 4.112.83.489 1.492 1.753 1.492 2.861v7c0 1.107-.662 2.37-1.504 2.869 0 0-7.163 4.083-7.252 4.105-.117.025-.6 0-.744 0-.144 0-.627.025-.744 0-.089-.022-7.264-4.112-7.264-4.112C.662 16.356 0 15.092 0 13.984V9.491zm17 2.884v1.608c0 .426-.314 1.024-.51 1.14l-6.994 3.86-7-3.868C2.313 15.008 2 14.41 2 13.984v-1.608l5.51 3.176c1.23.71 2.75.71 3.98 0L17 12.376zM6 7.984h3v1.2H6v-1.2zm-3-2h3v1.2H3v-1.2z" transform="translate(1 1)" fill="url(%23a)" fill-rule="evenodd"/></svg>');
+    }
+
+    .glostick__menu__item--dataclips {
+      background-image: url('data:image/svg+xml;utf8,<svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg"><title>dataclips</title><defs><linearGradient x1="0%" y1="0%" y2="100%" id="a"><stop stop-color="%23AC8ECE" offset="0%"/><stop stop-color="%2379589F" offset="100%"/></linearGradient></defs><path d="M3 14.018h10c.79 0 1.895-.22 3.014-.892C17.881 12.006 19 9.992 19 7.018c0-2.973-1.12-4.987-2.986-6.107C14.895.239 13.79.018 13 .018H5l.124.008a5.067 5.067 0 0 0-2.525.389C.982 1.122 0 2.656 0 5.018c0 2.363.982 3.896 2.6 4.604a5.067 5.067 0 0 0 2.524.389L5 10.018h6l-.164-.013a4.946 4.946 0 0 0 1.907-.079C14.096 9.588 15 8.608 15 7.018c0-1.59-.904-2.569-2.257-2.907a4.946 4.946 0 0 0-1.907-.08L11 4.019H4v2h7l.164-.013.099-.012c.322-.031.682-.02.994.058.522.13.743.37.743.967 0 .598-.221.837-.743.968a3.034 3.034 0 0 1-1.093.046L11 8.018H5l-.124.008-.038.003c-.428.03-.957-.03-1.437-.24C2.518 7.405 2 6.595 2 5.02c0-1.576.518-2.386 1.4-2.772.48-.21 1.01-.269 1.438-.24l.038.004.124.007h8c.094 0 .303.018.585.075.48.096.96.268 1.4.533C16.246 3.38 17 4.742 17 7.018c0 2.277-.756 3.638-2.014 4.393-.442.264-.92.437-1.4.533a3.381 3.381 0 0 1-.586.074H2v2h1z" transform="translate(1 4)" fill="url(%23a)" fill-rule="evenodd"/></svg>');
+    }
+
+    .glostick__menu__item--elements {
+      background-image: url('data:image/svg+xml;utf8,<svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg"><title>elements</title><defs><linearGradient x1="0%" y1="0%" y2="100%" id="a"><stop stop-color="%23AC8ECE" offset="0%"/><stop stop-color="%2379589F" offset="100%"/></linearGradient></defs><path d="M17 8.198V6.984c0-.426-.313-1.023-.496-1.131L9.496 1.984 2.507 5.846C2.313 5.961 2 6.558 2 6.984v1.214l.104.063 6.009 3.463a2.778 2.778 0 0 0 2.774 0l6.01-3.463.103-.063zm0 1.394v4.392c0 .426-.314 1.024-.51 1.14l-6.994 3.86-7-3.868C2.313 15.008 2 14.41 2 13.984V9.592l5.51 3.175c1.23.71 2.75.71 3.98 0L17 9.592zM0 6.984v7c0 1.108.662 2.372 1.492 2.862 0 0 7.175 4.09 7.264 4.112.117.025.6 0 .744 0 .144 0 .627.025.744 0 .089-.022 7.252-4.105 7.252-4.105.842-.498 1.504-1.762 1.504-2.869v-7c0-1.108-.662-2.372-1.492-2.861 0 0-7.176-4.09-7.265-4.112-.117-.025-.599 0-.743 0-.144 0-.626-.025-.743 0-.09.021-7.253 4.105-7.253 4.105C.662 4.611 0 5.876 0 6.984zm8 1h3v1.2H8v-1.2zM8 4h3v1.2H8V4zM5 5.984h3v1.2H5v-1.2zM11 6h3v1.2h-3V6z" transform="translate(1 1)" fill="url(%23a)" fill-rule="evenodd"/></svg>');
+    }
+
+    .glostick__menu__item--health {
+      background-image: url('data:image/svg+xml;utf8,<svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg"><title>health</title><defs><linearGradient x1="5.125%" y1="0%" x2="94.875%" y2="100%" id="a"><stop stop-color="%239A7CBC" offset="0%"/><stop stop-color="%2379589F" offset="100%"/></linearGradient></defs><path d="M5.21 11c.975 0 1.143-.466 1.39-1.892C6.702 8.514 7 2 7 2s.457 4.2 1.017 7.184c.565 3.015.811 4.271 1.102 5.54C9.739 17.43 9.938 18 11 18c.99 0 1.382-.703 2.016-2.479C13.184 15.05 14.08 11 14.5 11H19V9h-5c-.856 0-1.06.384-1.551 1.757C12.337 11.071 11 16 11 16s-.457-4.2-1.017-7.184C9.418 5.8 9.172 4.545 8.88 3.276 8.261.57 8.062 0 7 0 5.973 0 5.71.66 5.422 2.225c-.14.759-.248 1.647-.402 3.174C5.004 5.55 5 9 4.5 9H0v2h5.21z" transform="translate(1 2)" fill="url(%23a)" fill-rule="evenodd"/></svg>');
+    }
+
+    .glostick__menu__item--support {
+      background-image: url('data:image/svg+xml;utf8,<svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg"><title>support</title><defs><linearGradient x1="0%" y1="0%" y2="100%" id="a"><stop stop-color="%23AC8ECE" offset="0%"/><stop stop-color="%2379589F" offset="100%"/></linearGradient></defs><path d="M14.234 16.37l-2.204 1.216-1.001-1.43 2.163-1.275 1.042 1.488zm.88-.487l1.377-.76c.195-.115.509-.713.509-1.139v-7c0-.426-.313-1.023-.496-1.131l-1.392-.769-1.075 1.535.1.058c.48.294.863 1.054.863 1.72v4.206c0 .665-.383 1.425-.87 1.724l-.075.043 1.06 1.513zm-3.965 2.189l-1.653.912-7-3.868C2.313 15.008 2 14.41 2 13.984V13h2.042c.111.548.435 1.086.822 1.322 0 0 4.154 2.458 4.205 2.471.068.015.347 0 .431 0 .084 0 .363.015.43 0 .008-.001.092-.05.232-.13l.987 1.409zm3.082-13.474L12.23 3.493 11.21 4.95l1.965 1.159 1.057-1.51zm-2.883-1.591L9.496 1.984 2.507 5.846C2.313 5.961 2 6.558 2 6.984V8h2.042c.112-.549.436-1.087.829-1.327 0 0 4.147-2.453 4.199-2.466.067-.015.346 0 .43 0 .084 0 .363-.015.43 0 .01.002.166.092.413.236l1.005-1.436zM2 12V9h2v3H2zM0 6.984v7c0 1.108.662 2.372 1.492 2.862 0 0 7.175 4.09 7.264 4.112.117.025.6 0 .744 0 .144 0 .627.025.744 0 .089-.022 7.252-4.105 7.252-4.105.842-.498 1.504-1.762 1.504-2.869v-7c0-1.108-.662-2.372-1.492-2.861 0 0-7.176-4.09-7.265-4.112-.117-.025-.599 0-.743 0-.144 0-.626-.025-.743 0-.09.021-7.253 4.105-7.253 4.105C.662 4.611 0 5.876 0 6.984zM9.498 5.2l4.204 2.412c.11.067.298.44.298.706v4.364c0 .266-.188.639-.305.71L9.498 15.8l-4.2-2.412c-.11-.067-.298-.44-.298-.706V8.318c0-.266.188-.639.304-.71L9.498 5.2z" transform="translate(1 1)" fill="url(%23a)" fill-rule="evenodd"/></svg>');
+    }
+
+    .glostick__menu__item--docs {
+      background-image: url('data:image/svg+xml;utf8,<svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg"><title>docs</title><defs><linearGradient x1="0%" y1="0%" y2="100%" id="a"><stop stop-color="%23AC8ECE" offset="0%"/><stop stop-color="%2379589F" offset="100%"/></linearGradient></defs><path d="M2 5h12.502C15.329 5 16 5.668 16 6.498v13.004C16 20.33 15.321 21 14.499 21H4c-2.29 0-4-1.736-4-4V3c0-1.545 1.437-3 3-3h11.98v2H3c-.453 0-1 .554-1 1v2zm6 2H2v10c0 1.167.821 2 2 2h10V7h-1v6.5l-2.5-2-2.5 2V7zm4 4l-1.5-1L9 11V7h3v4zM3 4h11V3H3v1z" transform="translate(3 1)" fill="url(%23a)" fill-rule="evenodd"/></svg>');
+    }
+
+    .glostick__menu__item--settings {
+      background-image: url('data:image/svg+xml;utf8,<svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg"><title>settings</title><defs><linearGradient x1="0%" y1="0%" y2="100%" id="a"><stop stop-color="%23AC8ECE" offset="0%"/><stop stop-color="%2379589F" offset="100%"/></linearGradient></defs><path d="M15 13H0v2h15c.005.562.455 1 1.01 1h1.98c.567 0 1.01-.452 1.01-1.01v-1.98c0-.567-.452-1.01-1.01-1.01h-1.98c-.563 0-1.005.447-1.01 1zM4 7h15v2H4c-.005.553-.447 1-1.01 1H1.01C.451 10 0 9.557 0 8.99V7.01C0 6.451.443 6 1.01 6h1.98c.555 0 1.005.438 1.01 1zm11-6H0v2h15c.005.562.455 1 1.01 1h1.98C18.558 4 19 3.548 19 2.99V1.01C19 .442 18.548 0 17.99 0h-1.98c-.563 0-1.005.447-1.01 1zm1 .245c0-.135.108-.245.245-.245h1.51c.135 0 .245.108.245.245v1.51a.244.244 0 0 1-.245.245h-1.51A.244.244 0 0 1 16 2.755v-1.51zm-15 6C1 7.11 1.108 7 1.245 7h1.51C2.89 7 3 7.108 3 7.245v1.51A.244.244 0 0 1 2.755 9h-1.51A.244.244 0 0 1 1 8.755v-1.51zm15 6c0-.135.108-.245.245-.245h1.51c.135 0 .245.108.245.245v1.51a.244.244 0 0 1-.245.245h-1.51a.244.244 0 0 1-.245-.245v-1.51z" transform="translate(1 3)" fill="url(%23a)" fill-rule="evenodd"/></svg>');
+    }
+
+    .glostick__menu__item--notifications {
+      background-image: url('data:image/svg+xml;utf8,<svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg"><title>notifications</title><defs><linearGradient x1="0%" y1="0%" y2="100%" id="a"><stop stop-color="%23AC8ECE" offset="0%"/><stop stop-color="%2379589F" offset="100%"/></linearGradient></defs><path d="M7.151 2.157C3.85 2.982 3.4 6.846 3.4 8.5c0 1.857-3.4 5.569-3.4 5.569 0 .524.511.931 1.142.931h14.716c.633 0 1.142-.417 1.142-.931 0 0-3.4-3.712-3.4-5.569 0-1.654-.45-5.518-3.751-6.343a1.5 1.5 0 1 0-2.698 0zM8.5 19c-1.21 0-1.854-1.198-1.854-1.198-.33-.443-.144-.802.396-.802h2.916c.548 0 .74.367.396.802 0 0-.645 1.198-1.854 1.198z" transform="translate(2 2)" fill="url(%23a)" fill-rule="evenodd"/></svg>');
+    }
+
+    .glostick__menu__item--signout {
+      background-image: url('data:image/svg+xml;utf8,<svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg"><title>signout</title><defs><linearGradient x1="0%" y1="0%" y2="100%" id="a"><stop stop-color="%23AC8ECE" offset="0%"/><stop stop-color="%2379589F" offset="100%"/></linearGradient></defs><path d="M14.857 4H0v2h14.857L12 8.5l1.5 1.5 5-5-5-5L12 1.5 14.857 4z" transform="translate(1 6)" fill="url(%23a)" fill-rule="evenodd"/></svg>');
+    }
+
+    .glostick__menu--open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .glostick__link--right {
+      display: inline-block;
+      padding-top: 18px;
+      margin-right: 10px;
+    }
+
+    .glostick__link--right a {
+      color: #8DCAE9;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      /* Mobile device styles */
+      .glostick {
+        padding: 0 10px;
+      }
+
+      .glostick__property__name span {
+        left: 45px;
+      }
+
+      .glostick__menu {
+        position: fixed;
+        left: 10px;
+        right: 10px;
+        top: 10px;
+        width: auto;
+      }
+    }
+    </style></head>
+
+<body class="ember-application"><nav class="glostick">
+        <div class="glostick__modal-bg"></div>
+        <div class="glostick__property">
+          <a class="glostick__property__name" href="https://dashboard.heroku.com/">
+            <i class="icon icon-logo dashboard-logo"></i>
+            <span class="heroku-wordmark"></span>
+          </a>
+        </div>
+        
+        
+        <div class="glostick__user">
+          <a class="glostick__menu-icon">
+            <div class="icon icon-navigator-toggle"></div>
+          </a>
+
+          <div class="glostick__menu glostick__menu--navigator">
+            <a class="glostick__menu__item glostick__menu__item--dashboard" href="https://dashboard.heroku.com/">Dashboard</a>
+            <a class="glostick__menu__item glostick__menu__item--databases" href="https://postgres.heroku.com/">Databases</a>
+            <a class="glostick__menu__item glostick__menu__item--dataclips" href="https://dataclips.heroku.com/">Dataclips</a>
+            <a class="glostick__menu__item glostick__menu__item--elements" href="https://elements.heroku.com/">Elements</a>
+            <a class="glostick__menu__item glostick__menu__item--docs" href="https://devcenter.heroku.com/">Documentation</a>
+            <a class="glostick__menu__item glostick__menu__item--support" href="https://help.heroku.com/">Support</a>
+            
+          </div>
+
+          
+      <a class="glostick__menu-icon glostick__menu-icon--account">
+        <div class="glostick__user__avatar--container">
+          <img class="glostick__user__avatar" src="./fa_files/c87c22bc2606c34a54e8c6b2d37b9e2f">
+        </div>
+        <div class="glostick__user__notification"></div>
+      </a>
+
+      <div class="glostick__menu glostick__menu--account">
+        <a class="glostick__menu__item glostick__menu__item--account-details" href="https://dashboard.heroku.com/account">
+          <div class="glostick__user__avatar--container">
+            <img class="glostick__account-details__avatar" src="./fa_files/c87c22bc2606c34a54e8c6b2d37b9e2f">
+          </div>
+          <div class="glostick__account-details__name">
+            Matthew Hinea
+          </div>
+          <div class="glostick__account-details__email">
+            matthew.hinea@gmail.com
+          </div>
+        </a>
+        <a class="glostick__menu__item glostick__menu__item--settings" href="https://dashboard.heroku.com/account">Account settings</a>
+        
+      <a class="glostick__menu__item glostick__menu__item--notifications" href="https://dashboard.heroku.com/notifications">
+        Notifications
+        
+      </a>
+    
+        <a class="glostick__menu__item glostick__menu__item--signout" href="https://dashboard.heroku.com/logout">Sign out</a>
+        
+      </div>
+    
+        </div>
+
+      </nav>
+  
+
+  
+
+  <script src="./fa_files/vendor-7265f334dc67157381f0cfb23397f716.js"></script>
+  <script src="./fa_files/dashboard-db471af78038c0c95ae114d0feda52b7.js"></script>
+
+  <script src="./fa_files/glostick.min.js"></script>
+
+  
+  <script>
+  if (ENV.googleTagManagerApiKey) {
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer',ENV.googleTagManagerApiKey);
+  }
+  </script>
+  
+  
+
+
+<div id="modal-overlays"></div><div id="ember980" class="ember-view"><div id="ember1025" class="ember-view app-wrapper protected-app-logs"><div id="ember1036" class="ember-view alert alert-danger flash-danger text-center offline-status"><p>There's a problem connecting…
+<button class="btn btn-link" data-ember-action="1037">Refresh</button></p></div>
+
+<div id="ember1046" class="ember-view flash-messages"><!----></div>
+
+<!---->
+<div class="main-panel  main-panel--sidebar-disabled">
+  <div id="ember1057" data-test-target="sms-nag-banner" class="ember-view sms-nag-banner" style="display: none;"><div class="global-notification is-warning">
+  <p class="pull-left">
+    <i class="icon icon-2fa-sms"></i>
+    We recommend you add a backup phone number for account recovery purposes.
+  </p>
+
+  <div class="notification-actions pull-right">
+    <button class="btn btn-default btn-warning btn-xs notification-hide" data-ember-action="1058">
+      Skip
+    </button>
+
+    <button class="btn btn-warning btn-xs notification-action" data-ember-action="1059">
+      Add Phone Number
+    </button>
+  </div>
+</div>
+
+<!----></div>
+  <div class="top-nav">
+    <div class="limit-width">
+      <!---->
+      <div class="glostick-header__container">
+  <div class="glostick-header">
+    <div class="glostick-header__title">
+      <div class="glostick-header__title__crumb">
+<a id="ember1678" href="https://dashboard.heroku.com/apps" class="ember-view">            <i class="icon icon-personal-apps"></i>
+            Personal apps
+</a>      </div>
+      <div class="glostick-header__title__crumb glostick-header__title__crumb--divider">
+        <i class="icon icon-breadcrumb"></i>
+      </div>
+
+<!---->
+      <div class="glostick-header__title__crumb">
+        <div id="ember1679" class="ember-view metrics__active-alert__app-icon"><!----><i class="icon icon-app-state-awake" title="App is awake"></i>
+</div>
+          shielded-citadel-77890
+      </div>
+    </div>
+
+    <div class="glostick-header__actions-container">
+        <div class="u-margin-Rxxs">
+          <i id="ember1680" class="ember-view icon favorite-item icon-favorite off"><!----></i>
+        </div>
+        <div class="btn-group">
+          <a title="Open Application" target="_blank" class="btn btn-default btn-sm" href="https://shielded-citadel-77890.herokuapp.com/">
+            Open app
+          </a>
+          <div class="btn-group actions-button">
+            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              More <i class="icon icon-caret-purple"></i>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+<a id="ember1681" href="https://dashboard.heroku.com/apps/shielded-citadel-77890/logs" class="ember-view active">                  <i class="icon icon-menu-logs"></i>
+                  View logs
+</a>              </li>
+<!---->              <li id="ember1700" class="ember-view production-check-toggle"><a href="javascript:void(0);" data-ember-action="1701">
+  <i class="icon icon-menu-check"></i>
+  <span class="prod-context">Production</span> check
+</a>
+
+<!----></li>
+                <li class="divider"></li>
+                <li>
+<a id="ember1702" href="https://dashboard.heroku.com/apps/shielded-citadel-77890/deploy" class="ember-view">                    <i class="icon icon-menu-new-pipeline"></i>
+                    Add to pipeline...
+</a>                </li>
+              <li class="divider"></li>
+              <li id="ember1742" class="ember-view"><a href="javascript:void(0)" data-ember-action="1743">
+  <i class="icon icon-menu-restart"></i>
+  Restart all dynos
+</a>
+
+<span id="ember1752" class="ember-view confirmable-action"><!---->
+<!----></span></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="glostick-header__meta">
+<!---->
+<!---->  </div>
+</div>
+
+      <!---->
+
+<!---->    </div>
+  </div>
+
+  <div class="main-content ">
+    <!---->
+<div id="ember1761" class="app-nav ember-view nav nav-tabs sub-nav"><div class="limit-width">
+      <div id="ember1770" class="ember-view sub-nav-item"><a id="ember1771" href="https://dashboard.heroku.com/apps/shielded-citadel-77890" class="ember-view">  <i class="icon icon-sub-nav-overview"></i>
+  <span class="sub-nav-item-name">Overview</span>
+  <!---->
+</a></div>
+
+      <div id="ember1772" class="ember-view sub-nav-item"><a id="ember1773" href="https://dashboard.heroku.com/apps/shielded-citadel-77890/resources" class="ember-view">  <i class="icon icon-sub-nav-resources"></i>
+  <span class="sub-nav-item-name">Resources</span>
+  <!---->
+</a></div>
+
+      <div id="ember1774" class="ember-view sub-nav-item"><a id="ember1775" href="https://dashboard.heroku.com/apps/shielded-citadel-77890/deploy" class="ember-view">  <i class="icon icon-sub-nav-deploy"></i>
+  <span class="sub-nav-item-name">Deploy</span>
+  <!---->
+</a></div>
+
+      <div id="ember1776" class="ember-view sub-nav-item"><a id="ember1777" href="https://dashboard.heroku.com/apps/shielded-citadel-77890/metrics" class="ember-view">  <i class="icon icon-sub-nav-metrics"></i>
+  <span class="sub-nav-item-name">Metrics</span>
+  <!---->
+</a></div>
+
+      <div id="ember1802" class="ember-view sub-nav-item"><a id="ember1803" href="https://dashboard.heroku.com/apps/shielded-citadel-77890/activity" class="ember-view">  <i class="icon icon-sub-nav-activity"></i>
+  <span class="sub-nav-item-name">Activity</span>
+  <!---->
+</a></div>
+
+      <div id="ember1804" class="ember-view sub-nav-item"><a id="ember1805" href="https://dashboard.heroku.com/apps/shielded-citadel-77890/access" class="ember-view">  <i class="icon icon-sub-nav-access"></i>
+  <span class="sub-nav-item-name">Access</span>
+  <!---->
+</a></div>
+
+      <div id="ember1824" class="ember-view sub-nav-item"><a id="ember1825" href="https://dashboard.heroku.com/apps/shielded-citadel-77890/settings" class="ember-view">  <i class="icon icon-sub-nav-settings"></i>
+  <span class="sub-nav-item-name">Settings</span>
+  <!---->
+</a></div>
+
+</div>
+</div>
+<!---->
+<div class="build-view limit-width">
+  <div class="page-breadcrumb">
+    Application Logs
+  </div>
+
+  <div id="ember2676" class="ember-view build-stream build-stream-full"><div class="build-stream-output">
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:51:44.827420+00:00 heroku[router]</span>: at=info method=GET path="/templates/boards/index.html" host=shielded-citadel-77890.herokuapp.com request_id=fcc31065-ad64-4061-bcf4-28a6680ea215 fwd="184.97.117.244" dyno=web.1 connect=0ms service=3ms status=200 bytes=551</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:51:45.284170+00:00 heroku[router]</span>: at=info method=GET path="/favicon.ico" host=shielded-citadel-77890.herokuapp.com request_id=6760d012-208b-4dd0-80c3-ebd059bbca95 fwd="184.97.117.244" dyno=web.1 connect=0ms service=2ms status=304 bytes=133</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:51:45.368208+00:00 heroku[router]</span>: at=info method=GET path="/api/v1/boards.json" host=shielded-citadel-77890.herokuapp.com request_id=4915f0fa-0c43-424b-be03-ae65870e77fc fwd="184.97.117.244" dyno=web.1 connect=0ms service=38ms status=500 bytes=330</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:53:13.207888+00:00 heroku[router]</span>: at=info method=GET path="/templates/boards/new.html" host=shielded-citadel-77890.herokuapp.com request_id=4a335bee-0003-4fe0-bedf-eae9ceeca486 fwd="184.97.117.244" dyno=web.1 connect=0ms service=3ms status=200 bytes=746</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:53:13.400902+00:00 heroku[router]</span>: at=info method=POST path="/users/sign_in.json" host=shielded-citadel-77890.herokuapp.com request_id=a2bc56ac-2789-4257-bdb8-ba3dad6d9196 fwd="184.97.117.244" dyno=web.1 connect=1ms service=15ms status=201 bytes=1366</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:53:13.544263+00:00 heroku[router]</span>: at=info method=GET path="/api/v1/boards.json" host=shielded-citadel-77890.herokuapp.com request_id=db9b4c66-3025-4943-b786-40f50d5ffd2d fwd="184.97.117.244" dyno=web.1 connect=2ms service=42ms status=500 bytes=330</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:53:13.592689+00:00 heroku[router]</span>: at=info method=GET path="/favicon.ico" host=shielded-citadel-77890.herokuapp.com request_id=f7ddef0a-c2c2-429e-90fc-22f8aad811bf fwd="184.97.117.244" dyno=web.1 connect=0ms service=3ms status=200 bytes=228</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:53:13.661437+00:00 heroku[router]</span>: at=info method=GET path="/api/v1/users/1/teams.json" host=shielded-citadel-77890.herokuapp.com request_id=5a7f05f9-1a1c-43b5-a069-e97af7e03784 fwd="184.97.117.244" dyno=web.1 connect=0ms service=18ms status=200 bytes=1182</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:53:26.824135+00:00 heroku[router]</span>: at=info method=POST path="/api/v1/boards.json" host=shielded-citadel-77890.herokuapp.com request_id=2b5f09bb-8a34-47cb-bac0-9702b7109307 fwd="184.97.117.244" dyno=web.1 connect=0ms service=31ms status=200 bytes=1350</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:53:26.818368+00:00 heroku[router]</span>: at=info method=GET path="/api/v1/boards.json" host=shielded-citadel-77890.herokuapp.com request_id=544222e3-fe87-4ea7-ad5c-eb630c715575 fwd="184.97.117.244" dyno=web.1 connect=1ms service=27ms status=500 bytes=330</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:53:26.925915+00:00 heroku[router]</span>: at=info method=GET path="/favicon.ico" host=shielded-citadel-77890.herokuapp.com request_id=a0de9083-6ec8-4afb-91e3-3cf7fe3f03b7 fwd="184.97.117.244" dyno=web.1 connect=0ms service=3ms status=200 bytes=228</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:55:05.433244+00:00 heroku[router]</span>: at=info method=GET path="/api/v1/boards.json" host=shielded-citadel-77890.herokuapp.com request_id=dcd66d73-81a0-46a1-99be-9002f7c48366 fwd="184.97.117.244" dyno=web.1 connect=0ms service=16ms status=500 bytes=330</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:55:06.407135+00:00 heroku[router]</span>: at=info method=GET path="/favicon.ico" host=shielded-citadel-77890.herokuapp.com request_id=d50814db-6a6b-4a2b-bacc-18744acc390c fwd="184.97.117.244" dyno=web.1 connect=7ms service=3ms status=304 bytes=133</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--orange">2016-10-16T04:55:29.337990+00:00 heroku[web.1]</span>: Restarting</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--orange">2016-10-16T04:55:29.338561+00:00 heroku[web.1]</span>: State changed from up to starting</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--orange">2016-10-16T04:55:32.831388+00:00 heroku[web.1]</span>: Starting process with command `bin/rails server -p 28925 -e production`</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--orange">2016-10-16T04:55:33.138314+00:00 heroku[web.1]</span>: Stopping all processes with SIGTERM</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024743+00:00 app[web.1]</span>: [2016-10-16 04:55:34] FATAL SignalException: SIGTERM</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024766+00:00 app[web.1]</span>: 	/app/vendor/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:174:in `select'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024767+00:00 app[web.1]</span>: 	/app/vendor/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:174:in `block in start'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024768+00:00 app[web.1]</span>: 	/app/vendor/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:32:in `start'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024769+00:00 app[web.1]</span>: 	/app/vendor/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:162:in `start'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024769+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024770+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024771+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/commands/server.rb:80:in `start'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024772+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:80:in `block in server'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024773+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:75:in `tap'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024774+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:75:in `server'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024774+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:39:in `run_command!'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024775+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/commands.rb:17:in `&lt;top (required)&gt;'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024776+00:00 app[web.1]</span>: 	bin/rails:9:in `require'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024777+00:00 app[web.1]</span>: 	bin/rails:9:in `&lt;main&gt;'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024837+00:00 app[web.1]</span>: [2016-10-16 04:55:34] INFO  going to shutdown ...</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.024885+00:00 app[web.1]</span>: [2016-10-16 04:55:34] INFO  WEBrick::HTTPServer#start done.</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.058117+00:00 app[web.1]</span>: =&gt; Booting WEBrick</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.058121+00:00 app[web.1]</span>: =&gt; Rails 4.2.6 application starting in production on http://0.0.0.0:45266</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.058122+00:00 app[web.1]</span>: =&gt; Run `rails server -h` for more startup options</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.058123+00:00 app[web.1]</span>: =&gt; Ctrl-C to shutdown server</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:34.058127+00:00 app[web.1]</span>: Exiting</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--orange">2016-10-16T04:55:34.144264+00:00 heroku[web.1]</span>: Process exited with status 143</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:37.695468+00:00 app[web.1]</span>: [2016-10-16 04:55:37] INFO  WEBrick 1.3.1</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:37.695508+00:00 app[web.1]</span>: [2016-10-16 04:55:37] INFO  ruby 2.2.4 (2015-12-16) [x86_64-linux]</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T04:55:37.695909+00:00 app[web.1]</span>: [2016-10-16 04:55:37] INFO  WEBrick::HTTPServer#start: pid=3 port=28925</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--orange">2016-10-16T04:55:38.250304+00:00 heroku[web.1]</span>: State changed from starting to up</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:55:39.288778+00:00 heroku[router]</span>: at=info method=GET path="/" host=shielded-citadel-77890.herokuapp.com request_id=9a3a1e4d-83e8-4296-82ff-7323a0fb47ec fwd="184.97.117.244" dyno=web.1 connect=0ms service=93ms status=200 bytes=2512</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:55:39.677519+00:00 heroku[router]</span>: at=info method=GET path="/stylesheets/bootstrap-horizon.css" host=shielded-citadel-77890.herokuapp.com request_id=6b7d2cb6-6655-4647-a739-2d24ca433fa8 fwd="184.97.117.244" dyno=web.1 connect=0ms service=15ms status=200 bytes=2988</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:55:39.790142+00:00 heroku[router]</span>: at=info method=GET path="/assets/application-d09d6fb8554c1fe64c5afbf0dccb9c2d3399204139505b9b6bcf23732c24b983.css" host=shielded-citadel-77890.herokuapp.com request_id=46196d3c-1546-4dbe-8713-aa15b0fb33c1 fwd="184.97.117.244" dyno=web.1 connect=0ms service=3ms status=200 bytes=421</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:55:39.905177+00:00 heroku[router]</span>: at=info method=GET path="/assets/application-544fceb70a9a42f7a2b85beaaa4ac5a9d59b28bfc088ceaf19cd08e0bc88a1b9.js" host=shielded-citadel-77890.herokuapp.com request_id=db3faee9-a63c-4f6e-949a-cab2579fc065 fwd="184.97.117.244" dyno=web.1 connect=0ms service=8ms status=200 bytes=139361</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:55:40.936785+00:00 heroku[router]</span>: at=info method=GET path="/templates/boards/index.html" host=shielded-citadel-77890.herokuapp.com request_id=19b21510-304b-4c4b-9ecb-320f3adaaa93 fwd="184.97.117.244" dyno=web.1 connect=0ms service=5ms status=200 bytes=551</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:55:41.503379+00:00 heroku[router]</span>: at=info method=GET path="/api/v1/boards.json" host=shielded-citadel-77890.herokuapp.com request_id=fe6276a6-89b8-49c2-90a6-69eaabe64d64 fwd="184.97.117.244" dyno=web.1 connect=0ms service=43ms status=500 bytes=330</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--blue">2016-10-16T04:55:41.628364+00:00 heroku[router]</span>: at=info method=GET path="/favicon.ico" host=shielded-citadel-77890.herokuapp.com request_id=97e6117f-fe95-4256-b5e1-010d20edb3af fwd="184.97.117.244" dyno=web.1 connect=0ms service=3ms status=200 bytes=228</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--green">2016-10-16T04:59:16.024545+00:00 heroku[api]</span>: Starting process with command `bin/rails console` by matthew.hinea@gmail.com</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--red">2016-10-16T04:59:18.846574+00:00 heroku[run.1793]</span>: Awaiting client</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--red">2016-10-16T04:59:18.866818+00:00 heroku[run.1793]</span>: Starting process with command `bin/rails console`</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--red">2016-10-16T04:59:19.122348+00:00 heroku[run.1793]</span>: State changed from starting to up</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--red">2016-10-16T05:26:42.781737+00:00 heroku[run.1793]</span>: State changed from up to complete</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--red">2016-10-16T05:26:42.759423+00:00 heroku[run.1793]</span>: Process exited with status 0</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--orange">2016-10-16T05:28:56.237943+00:00 heroku[web.1]</span>: Idling</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--orange">2016-10-16T05:28:56.238472+00:00 heroku[web.1]</span>: State changed from up to down</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--orange">2016-10-16T05:29:00.056575+00:00 heroku[web.1]</span>: Stopping all processes with SIGTERM</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377022+00:00 app[web.1]</span>: [2016-10-16 05:29:01] FATAL SignalException: SIGTERM</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377033+00:00 app[web.1]</span>: 	/app/vendor/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:174:in `select'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377035+00:00 app[web.1]</span>: 	/app/vendor/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:174:in `block in start'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377035+00:00 app[web.1]</span>: 	/app/vendor/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:32:in `start'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377036+00:00 app[web.1]</span>: 	/app/vendor/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:162:in `start'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377037+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377037+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377038+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/commands/server.rb:80:in `start'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377039+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:80:in `block in server'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377049+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:75:in `tap'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377050+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:75:in `server'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377051+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:39:in `run_command!'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377051+00:00 app[web.1]</span>: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/commands.rb:17:in `&lt;top (required)&gt;'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377053+00:00 app[web.1]</span>: 	bin/rails:9:in `require'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377053+00:00 app[web.1]</span>: 	bin/rails:9:in `&lt;main&gt;'</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377651+00:00 app[web.1]</span>: [2016-10-16 05:29:01] INFO  going to shutdown ...</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.377733+00:00 app[web.1]</span>: [2016-10-16 05:29:01] INFO  WEBrick::HTTPServer#start done.</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.493273+00:00 app[web.1]</span>: =&gt; Booting WEBrick</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.493276+00:00 app[web.1]</span>: =&gt; Rails 4.2.6 application starting in production on http://0.0.0.0:28925</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.493278+00:00 app[web.1]</span>: =&gt; Run `rails server -h` for more startup options</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.493278+00:00 app[web.1]</span>: =&gt; Ctrl-C to shutdown server</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--purple">2016-10-16T05:29:01.493279+00:00 app[web.1]</span>: Exiting</pre>
+        <pre class="build-stream-line"><span class="log-color log-color--orange">2016-10-16T05:29:01.623949+00:00 heroku[web.1]</span>: Process exited with status 143</pre>
+</div>
+
+<footer class="build-stream-footer">
+  <label>
+    <input id="ember2677" type="checkbox" class="ember-view ember-checkbox"> Autoscroll with output
+  </label>
+</footer>
+</div>
+</div>
+
+
+  </div>
+
+  <!---->
+  <div id="ember1077" class="ember-view app-footer allow-if-delinquent dashboard-preview-is-present"><div class="section-content">
+  <ul class="list-inline">
+    <li class="hidden-xs"><a href="http://heroku.com/home">heroku.com</a></li>
+    <li><a href="https://blog.heroku.com/">Blogs</a></li>
+    <li><a href="https://www.heroku.com/careers">Careers</a></li>
+    <li><a href="https://devcenter.heroku.com/">Documentation</a></li>
+  </ul>
+  <ul class="list-inline footer-actions">
+    <li>
+      <a class="btn btn-primary btn-xs u-margin-Rs" href="https://help.heroku.com/" target="_blank">Support</a>
+    </li>
+  </ul>
+  <ul class="list-inline">
+    <li><a href="https://www.heroku.com/policy/tos">Terms of Service</a></li>
+    <li><a href="https://www.heroku.com/policy/privacy">Privacy</a></li>
+    <li><a href="https://www.heroku.com/policy/privacy#web_site_navigational_information">Cookies</a></li>
+    <li>© 2016 Salesforce.com</li>
+  </ul>
+</div>
+</div>
+
+  <div id="ember1086" class="ember-view"><div class="quick-jump  typeahead-component">
+  <div class="quick-jump__filter__wrap">
+    <i class="icon icon-search-quickjump"></i>
+    <input id="ember1099" placeholder="Jump to Favorites, Apps, Pipelines, Spaces..." type="text" class="quick-jump__filter ember-view form-control filter mousetrap">
+  </div>
+
+  <div class="quick-jump__results ">
+<!----><!---->  </div>
+
+</div>
+</div>
+</div>
+
+<!---->
+<!---->
+</div>
+</div></body></html>

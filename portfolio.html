@@ -4,6 +4,16 @@
    <meta charset="UTF-8">
    <title>matt hinea | portfolio</title>
 
+   <script   src="http://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+
+   <!-- jQuery UI -->
+
+   <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+
    <!-- Viewport -->
    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 
@@ -11,9 +21,6 @@
    <!-- Latest compiled and minified CSS -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
    <link rel="stylesheet" href="styles.css">
-
-   <!-- Optional theme -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
    <!-- Latest compiled and minified JavaScript -->
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -41,9 +48,11 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
          <ul class="nav navbar-nav" id="navbar-links">
+            <li><a href="index1.html">Home</a></li>
             <li><a href="#">Portfolio</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="mailto:matthew.hinea@gmail.com">Contact</a></li>
+            <li><a href="cv.html">Resume</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
          </ul>
       </div><!-- /.navbar-collapse -->
    </div><!-- /.container-fluid -->
@@ -59,16 +68,40 @@
 </div>
 
 <main class="container" id="main">
+
    <div class="row">
+
+      <div class="col-md-5 col-md-offset-0 col-sm-offset-0">
+         <div class="row content-center" id="side-nav">
+            <div class="col-xs-3">
+               <a href="portfolio.html">Portfolio</a>
+            </div>
+            <div class="col-xs-3">
+               <a href="cv.html">Resume</a>
+            </div>
+            <div class="col-xs-3">
+               <a href="about.html">About</a>
+            </div>
+            <div class="col-xs-3">
+               <a href="contact.html">Contact</a>
+            </div>
+         </div>
+
+      </div>
+   </div>
+   <div class="row" id="introduction">
       <div class="col-sm-9" id="portfolio-div">
          <h3 id="first-portfolio-item">App.ly</h3> <h4> <a href="https://floating-retreat-44813.herokuapp.com/" target="_blank">Site</a> | <a href="https://github.com/mnd-dsgn/college_scorecard">Repo</a> </h4>
-         <p class="about-me border-bottom padding-bottom">App.ly is a Rails app for prospective college students and their families. Search 500 colleges and universities, browse useful school data, bookmark schools you're interested in, review schools, and track your applications. I added school reviews, configured the Google oauth sign-in, and added automatic email confirmation to the app.</p>
+         <p class="about-projects border-bottom padding-bottom">App.ly is a Rails app for prospective college students and their families. Search 500 colleges and universities, browse useful school data, bookmark schools you're interested in, review schools, and track your applications. I added school reviews, configured the Google oauth sign-in, and added automatic email confirmation to the app.</p>
+
+         <h3>Graybook</h3><h4><a href="https://greybook.herokuapp.com/" target="_blank">Site</a> | <a href="https://github.com/mnd-dsgn/greybook">Repo</a> </h4>
+         <p class="about-projects border-bottom padding-bottom"> Greybook is a familiar, family-friendly social network. </p>
 
          <h3>Seattle Crime Data </h3><h4><a href="https://gentle-mountain-95184.herokuapp.com/" target="_blank">Site</a> | <a href="https://github.com/mnd-dsgn/seattle_crime_stats">Repo</a> </h4>
-         <p class="about-me border-bottom padding-bottom"> Built to simplify interaction with Seattle's OpenData API. Crime statistics for searched-for time periods and areas are displayed to the screen with other relevant data. Form validations use the database to check whether beats belong to precincts, otherwise the data comes from real-time hits to the API.</p>
+         <p class="about-projects border-bottom padding-bottom"> Built to simplify interaction with Seattle's OpenData API. Crime statistics for searched-for time periods and areas are displayed to the screen with other relevant data. Form validations use the database to check whether beats belong to precincts, otherwise the data comes from real-time hits to the API.</p>
 
          <h3>Spotify.sample</h3><h4><a href="https://spotify-sampler.herokuapp.com/" target="_blank">Site</a> | <a href="https://github.com/mnd-dsgn/spotify_sampler">Repo</a>  </h4>
-         <p class="about-me border-bottom padding-bottom"> I built this as a spin-off of a hackathon project. It reads a random word from a database of 60,000 words, searches Spotify for the word, and returns a random result. Listening history is displayed on the screen. </p>
+         <p class="about-projects border-bottom padding-bottom"> I built this as a spin-off of a hackathon project. It reads a random word from a database of 60,000 words, searches Spotify for the word, and returns a random result. Listening history is displayed on the screen. </p>
 
          <h3>Asteroids</h3>
          <h4 class="margin-right">
@@ -88,25 +121,16 @@
             <a href="https://github.com/mnd-dsgn/project_game_center_browser.git">Repo</a>
          </h4>
 
-         <p class="about-me border-bottom padding-bottom"> JavaScript implementations of three classic games that I wrote while learning JavaScript at Viking Code School.</p>
+         <p class="about-projects border-bottom padding-bottom"> JavaScript implementations of three classic games that I wrote as a student at Viking Code School.</p>
 
 
-      </div>
-      <div class="col-sm-1 col-md-offset-0 col-sm-offset-0">
-         <ul id="side-nav">
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="mailto:matthew.hinea@gmail.com">Contact</a></li>
-         </ul>
       </div>
    </div>
+
 </main>
 
+<script src="js/home_animations.js"></script>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>

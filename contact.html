@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="mySite">
+<html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>matt hinea dot info</title>
+   <title>matt hinea | contact</title>
 
 
    <script   src="http://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
-   <script src="js/angular-fontawesome.min.js"> </script>
 
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 
    <!-- jQuery UI -->
 
@@ -45,24 +45,24 @@
    <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="row">
-      <div class="navbar-header">
-         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-         </button>
-         <a class="navbar-brand" id="navbar-header" href="index.html">Matt Hinea</a>
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="navbar-header" href="index.html">Matt Hinea</a>
          </div>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
          <ul class="nav navbar-nav" id="navbar-links">
-            <li><a ui-sref="main">Home</a></li>
-            <li><a ui-sref="portfolio">Portfolio</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="cv.html">Resume</a></li>
-            <li><a ui-sref="about">About</a></li>
-            <li><a ui-sref="contact">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
          </ul>
       </div><!-- /.navbar-collapse -->
    </div><!-- /.container-fluid -->
@@ -71,7 +71,7 @@
 <div class="container" id="full-screen-title">
    <div class="row">
       <div class="col-xs-12">
-         <h1 id="full-screen-name"><a href="#"> Matt Hinea</a></h1>
+         <h1 id="full-screen-name"><a href="index.html"> Matt Hinea</a></h1>
       </div>
    </div>
 
@@ -83,35 +83,41 @@
       <div class="col-md-5 col-md-offset-0 col-sm-offset-0">
          <div class="row content-center" id="side-nav">
             <div class="col-xs-3">
-               <a ui-sref="portfolio">Portfolio</a>
+               <a href="portfolio.html">Portfolio</a>
             </div>
             <div class="col-xs-3">
                <a href="cv.html">Resume</a>
             </div>
             <div class="col-xs-3">
-               <a ui-sref="about">About</a>
+               <a href="about.html">About</a>
             </div>
             <div class="col-xs-3">
-               <a ui-sref="contact">Contact</a>
+               <a href="contact.html">Contact</a>
             </div>
          </div>
 
       </div>
+
+
+      <div class="col-xs-12 white" id="contact-info-section">
+         <h4 class="contact-info">Email: &nbsp;&nbsp;&nbsp;<a href="mailto:&#109;&#097;&#116;&#116;&#104;&#101;&#119;&#046;&#104;&#105;&#110;&#101;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#109;&#097;&#116;&#116;&#104;&#101;&#119;&#046;&#104;&#105;&#110;&#101;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></h4>
+      </div>
+      <div class="col-xs-12 white">
+         <h4 class="contact-info">Phone: &nbsp;&nbsp;&nbsp; (509) 270-9717</h4>
+      </div>
+      <div class="col-xs-12 white">
+         <h4 class="contact-info">Coordinates:&nbsp;&nbsp;&nbsp; 47.668866, -117.093001</h4>
+      </div>
+
+
    </div>
-
-
-
-
-   <ui-view></ui-view>
 
 </main>
 
 
 
 
-
-   <script src="angular/app.js"></script>
-   <!--<script src="js/home_animations.js"></script>-->
+<script src="js/home_animations.js"></script>
 
 </body>
 </html>
