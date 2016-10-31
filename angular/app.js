@@ -6,6 +6,21 @@ mySite.config(["$urlRouterProvider", "$stateProvider", function ($urlRouterProvi
 
     $stateProvider
 
+        .state('main', {
+            url: "/",
+            controller: ["$scope", function ($scope) {
+                $scope.iconColor = "white";
+            }],
+            views: {
+                "@": {
+                    templateUrl: "templates/index.html"
+                },
+
+                "github@main": {
+                    templateUrl: "templates/github.html"
+                }
+            }
+        })
 
         .state('portfolio', {
             url: "/portfolio",
@@ -25,19 +40,6 @@ mySite.config(["$urlRouterProvider", "$stateProvider", function ($urlRouterProvi
             url: "/contact",
             templateUrl: "templates/contact.html"
         })
-        .state('main', {
-            url: "/",
-            controller: ["$scope", function ($scope) {
-                $scope.iconColor = "white";
-            }],
-            views: {
-                "@": {
-                    templateUrl: "templates/index.html"
-                },
 
-                "github@main": {
-                    templateUrl: "templates/github.html"
-                }
-            }
-        })
 }])
+

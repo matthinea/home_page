@@ -236,7 +236,7 @@ var model = {
 
 var view = {
   init: function() {
-    this.$levelDisplay.attr("src", "images/" + controller.level + ".png");
+    this.$levelDisplay.attr("src", "asteroids/images/" + controller.level + ".png");
   },
 
   $levelDisplay: $("#level-num"),
@@ -259,7 +259,7 @@ var view = {
   },
 
   updateLevel: function() {
-    this.$levelDisplay.attr("src", "images/" + controller.level + ".png");
+    this.$levelDisplay.attr("src", "/asteroids/images/" + controller.level + ".png");
   },  
 
   placeAsteroid: function(a) {
